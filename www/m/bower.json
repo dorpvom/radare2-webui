@@ -24,5 +24,8 @@
     "datatables.net-dt": "^1.10.16",
     "file-saver": "^1.3.3",
     "mdl-selectfield": "^1.0.4"
+  },
+  "resolutions": {
+    "material-design-lite": "1.3.0"
   }
 }

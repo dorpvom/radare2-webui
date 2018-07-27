@@ -1,3 +1,5 @@
+var r2_root = self.location.pathname.split('/').slice(0, -2).join('/');
+
 enyo.kind({
 	name: 'Graph',
 	kind: 'Scroller',
@@ -10,9 +12,9 @@ enyo.kind({
 		]}
 	],
 	openGraphBB: function() {
-		window.open('/graph/', '_self');
+		window.open(r2_root + '/graph/', '_self');
 	},
 	openGraphCG: function() {
-		window.open('/d3/', '_self');
+		window.open(r2_root + '/d3/', '_self');
 	}
 });

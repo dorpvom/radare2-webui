@@ -1,3 +1,5 @@
+var r2_root = self.location.pathname.split('/').slice(0, -2).join('/');
+
 enyo.kind({
 	name: 'Settings',
 	classes: 'panels-sample-sliding-content r2panel',
@@ -178,9 +180,9 @@ enyo.kind({
 		else createCookie('r2_view_mode', 'old', 7);
 
 		if (twopanels) {
-			window.parent.location = '/enyo/two';
+			window.parent.location = r2_root + '/enyo/two';
 		} else {
-			window.parent.location = '/enyo/';
+			window.parent.location = r2_root + '/enyo/';
 		}
 		r2ui.seek('$$', false);
 	},
